@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto" sans-serif;
+}
+
+.todo-list {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  border: solid 1px #c4c4c4;
+  border-radius: 10px;
+  margin: 25px auto;
+  overflow: hidden;
+}
+
+.yellow {
+  width: 100%;
+  height: 28px;
+  background-color: #ffdc40;
+}
+
+.header {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 30.47px;
+  padding-bottom: 5px;
+  font-family: "roboto";
+}
+
+.icon-arrow {
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+#to-do-input {
+  width: 286px;
+  height: 40px;
+  border-radius: 10px;
+  border: solid 1px rgba(196, 196, 196, 1);
+  justify-self: center;
+  font-size: 14px;
+  color: #333;
+  padding-left: 10px;
+}
+
+.input-icon {
+  position: relative;
+  top: -40px;
+  left: 100px;
+}
+
+.add-btn {
+  width: 150px;
+  height: 42px;
+  background-color: #833ae0;
+  border: none;
+  border-radius: 71px;
+  font-size: 14px;
+  line-height: 16.41px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  /* margin-top: 8px; */
+  margin-bottom: 19px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #5406b4;
+}
+
+.add-btn::before {
+  display: block;
+  content: "+";
+  background-color: #9953f1;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 15px;
+}
+
+.tasks {
+  border: solid 1px #c4c4c4;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 286px;
+  display: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  size: 14px;
+  line-height: 16.41px;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 15px;
+}
+
+li:last-child {
+  padding-bottom: 0 !important;
+}
+
+.list-icon {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.list-icon:hover {
+  transform: rotate(45deg);
+  filter: invert(57%) sepia(81%) saturate(3995%) hue-rotate(331deg) brightness(102%) contrast(102%);
+}
